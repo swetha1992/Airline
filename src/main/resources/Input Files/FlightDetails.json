@@ -1,0 +1,7 @@
+[
+  {"from" :"hyd", "to": "maa", "flight_name": "A"},
+  {"from" :"blr", "to": "del", "flight_name": "B"},
+  {"from" :"hyd", "to": "blr", "flight_name": "C"},
+  {"from" :"hyd", "to": "blr", "flight_name": "D"},
+  {"from" :"maa", "to": "hyd", "flight_name": "E"}
+]

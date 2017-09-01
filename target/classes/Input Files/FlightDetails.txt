@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flights>
+    <Flight>
+    <to>HYD</to>
+    <from>MAA</from>
+    <flightName>A</flightName>
+</Flight>
+    <Flight>
+        <to>MAA</to>
+        <from>BLR</from>
+        <flightName>V</flightName>
+    </Flight>
+    <Flight>
+        <to>DEL</to>
+        <from>MAA</from>
+        <flightName>C</flightName>
+    </Flight>
+</Flights>

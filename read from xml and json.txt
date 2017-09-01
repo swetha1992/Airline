@@ -1,0 +1,51 @@
+ public List<Flight> readFlightDetailsfromXML() {
+            List<Flight> flightList=new ArrayList<Flight>();
+            try {
+                Flight flightObj = new Flight();
+                File inputFile = new File("src\\main\\resources\\FlightDetails.txt");
+                DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+                DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+                Document doc = dBuilder.parse(inputFile);
+                doc.getDocumentElement().normalize();
+                System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+                NodeList nList = doc.getElementsByTagName("Flight");
+                System.out.println("----------------------------");
+                for (int temp = 0; temp < nList.getLength(); temp++) {
+                    Node nNode = nList.item(temp);
+                    System.out.println("\nCurrent Element :" + nNode.getNodeName());
+                    if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                        Element eElement = (Element) nNode;
+                        flightObj.source=eElement.getElementsByTagName("from").item(0).getTextContent();
+                        flightObj.destination=eElement.getElementsByTagName("to").item(0).getTextContent();
+                        flightObj.flightName=eElement.getElementsByTagName("flightName").item(0).getTextContent();
+                    }
+                    flightList.add(flightObj);
+                }
+            }
+            catch (Exception e){
+                System.out.println("exception");
+            }
+        return flightList;
+    }
+    public List<Flight> readFlightDetailsfromJSON() {
+
+
+        List<Flight> flightList = new ArrayList<Flight>();
+        JSONParser parser = new JSONParser();
+        try {
+
+            JSONArray flights = (JSONArray) parser.parse(new FileReader("src\\main\\resources\\FlightDetails.json"));
+            System.out.println("inside read details"+ flights.size());
+            for (Object obj : flights) {
+                JSONObject flight = (JSONObject) obj;
+                Flight flightObj = new Flight();
+                flightObj.source=(String) flight.get("from");
+                flightObj.destination=(String) flight.get("to");
+                flightObj.flightName=(String) flight.get("flight_name");
+                flightList.add(flightObj);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return flightList;
+    }

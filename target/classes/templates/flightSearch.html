@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body style="text-align: center;">
+<h3>Book Your Flights!!!</h3>
+<form id="search-form" action="search" method="post">
+    <select id="source" name="source">
+        <option value="">Select Source</option>
+        <option th:each="location : ${locations}" th:value="${location.id}" th:text="${location.name}"></option>
+    </select>
+    <select id="destination" name="destination">
+        <option value="">Select Destination</option>
+        <option th:each="location : ${locations}" th:value="${location.id}" th:text="${location.name}"></option>
+    </select>
+    <input type="submit" text="search" value="submit"/>
+    <br/><br/><br/>
+    <div style="margin-left: 40%;">
+        <table style="border: 1px solid black;">
+            <tr style="border: 1px solid black;">
+                <th>Source</th>
+                <th>Destination</th>
+                <th>FlightName</th>
+            </tr>
+            <tr th:each="flight : ${availableFlights}">
+                <td th:text="${flight.source}" style="border: 1px solid black;"></td>
+                <td th:text="${flight.destination}" style="border: 1px solid black;"></td>
+                <td th:text="${flight.flightName}" style="border: 1px solid black;"></td>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>
