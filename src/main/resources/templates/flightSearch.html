@@ -1,36 +1,92 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Airline Booking Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        body {
+            font-family: Tahoma;
+            font-size: 12pt;
+            text-align: center;
+        }
+          table {
+            border: 1px solid #cdcdcd;
+            font-size: 14px;
+            table-layout: fixed;
+            width: 200px;
+            margin-left: -64px;
+        }
+        th, td{
+             width: 100px;
+        }
+        .inputtextbox {
+            padding: 0;
+            height: 30px;
+            position: relative;
+            left: 0;
+            outline: none;
+            border: 1px solid #cdcdcd;
+            background-color: white;
+            font-size: 12px;
+            width: 100px;
+        }
+        .dropdown{
+            padding: 0;
+            height: 30px;
+            position: relative;
+            left: 0;
+            outline: none;
+            border: 1px solid #cdcdcd;
+            background-color: white;
+            font-size: 12px;
+            width: 140px;
+        }
+    </style>
 </head>
 
-<body style="text-align: center;">
+<body>
 <h3>Book Your Flights!!!</h3>
-<form id="search-form" action="search" method="post">
-    <select id="source" name="source">
+<form id="search-form" action="search" method="post" th:object="${SearchCriteria}">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    Source : <select id="source" name="source" th:field="${SearchCriteria.source}" class="dropdown">
         <option value="">Select Source</option>
-        <option th:each="location : ${locations}" th:value="${location.id}" th:text="${location.name}"></option>
-    </select>
-    <select id="destination" name="destination">
+        <option th:each="location : ${locations}" th:value="${location.key}" th:text="${location.value}"></option>
+    </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Destination : <select id="destination" name="destination" th:field="${SearchCriteria.destination}" class="dropdown">
         <option value="">Select Destination</option>
-        <option th:each="location : ${locations}" th:value="${location.id}" th:text="${location.name}"></option>
-    </select>
+        <option th:each="location : ${locations}" th:value="${location.key}" th:text="${location.value}"></option>
+    </select> <br/> <br/> <br/>
+    Passenger Count : <input type="number" th:field="${SearchCriteria.passengerCount}" class="inputtextbox"/> &nbsp;&nbsp;&nbsp;
+    Departure Date : <input type="date"  th:field="${SearchCriteria.departureDate}"/> <br/> <br/> <br/>
+    Class : <select id="class" name="class" th:field="${SearchCriteria.flightClass}" class="dropdown">
+    <option th:each="flightClass : ${flightClasses}" th:value="${flightClass.key}" th:text="${flightClass.value}"></option>
+</select> <br/> <br/> <br/>
     <input type="submit" text="search" value="submit"/>
     <br/><br/><br/>
-    <div style="margin-left: 40%;">
-        <table style="border: 1px solid black;">
-            <tr style="border: 1px solid black;">
-                <th>Source</th>
-                <th>Destination</th>
-                <th>FlightName</th>
-            </tr>
-            <tr th:each="flight : ${availableFlights}">
-                <td th:text="${flight.source}" style="border: 1px solid black;"></td>
-                <td th:text="${flight.destination}" style="border: 1px solid black;"></td>
-                <td th:text="${flight.flightName}" style="border: 1px solid black;"></td>
-            </tr>
-        </table>
+
+
+    <div th:if ="${availableFlights  !=null}">
+        <div th:if="${#lists.size(availableFlights)!=0}" style="margin-left: 40%;">
+            <table>
+                <tr>
+                    <th>Flight Name</th>
+                    <th>To</th>
+                    <th>From</th>
+                    <th>Departure Date</th>
+                    <!--<th>Price</th> -->
+                </tr>
+                <tr th:each="flight : ${availableFlights}">
+                    <td th:text="${flight.flightName}" ></td>
+                    <td th:text="${flight.to}" ></td>
+                    <td th:text="${flight.from}" ></td>
+                    <td th:text="${flight.departureDate}"></td>
+                   <!-- <td th:text="${flight.totalPrice}"></td> -->
+                </tr>
+            </table>
+        </div>
+         <div th:if="${#lists.size(availableFlights)==0}">
+            <div>No Flights Available</div>
+         </div>
     </div>
 </form>
 </body>
