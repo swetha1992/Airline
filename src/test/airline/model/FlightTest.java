@@ -16,7 +16,7 @@ public class FlightTest {
     }
     @Test
     public void shouldReturnTrueWhenMatchingFlightIsAvailable(){
-        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null);
+        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null,null);
         SearchCriteria searchCriteria=new SearchCriteria();
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");
@@ -25,7 +25,7 @@ public class FlightTest {
     }
     @Test
     public void shouldReturnFalseWhenMatchingFlightIsNotAvailable0(){
-        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null);
+        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null,null);
         SearchCriteria searchCriteria=new SearchCriteria();
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");
@@ -35,7 +35,7 @@ public class FlightTest {
 
     @Test
     public void shouldReturnTrueDepartureDateMatch(){
-        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null);
+        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null,null);
         SearchCriteria searchCriteria=new SearchCriteria();
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");
@@ -44,7 +44,7 @@ public class FlightTest {
     }
     @Test
     public void shouldReturnTrueIfDeparturDateIsEmpty(){
-        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null);
+        Flight flightObj = new Flight("", "maa" ,"maa",null,null,null,null);
         SearchCriteria searchCriteria=new SearchCriteria();
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");

@@ -15,7 +15,8 @@ public class SearchService {
         List<Flight> availableFlightList = new ArrayList<Flight>();
         for (Flight flight : flightList){
             if(availability(flight,searchCriteria)){
-                flight.setTotalPrice(determinePrice(flight,searchCriteria));
+                PriceService priceService=new PriceService();
+                flight.setTotalPrice(priceService.determinePrice(flight,searchCriteria));
                 availableFlightList.add(flight);
             }
         }
@@ -34,7 +35,7 @@ public class SearchService {
         return isFromToMatch;
     }
     public Boolean seatAvailability(Flight flight, SearchCriteria searchCriteria){
-        int seats=flight.getFlightClasses().get(searchCriteria.getFlightClass());
+        int seats=flight.getCurrentSeatAvailability().get(searchCriteria.getFlightClass());
         Boolean isSeatAvailable=(seats > searchCriteria.getPassengerCount() ? Boolean.TRUE : Boolean.FALSE);
         return isSeatAvailable;
     }
@@ -46,11 +47,5 @@ public class SearchService {
                                 (utility.convertStringToLocalDate(searchCriteria.getDepartureDate()))==0)
                                     ? Boolean.TRUE :Boolean.FALSE);
         return dateAvailable;
-    }
-
-    public int determinePrice(Flight flight, SearchCriteria searchCriteria){
-        int basePrice=flight.getPrices().get(searchCriteria.getFlightClass());
-        int passengerCount = searchCriteria.getPassengerCount();
-        return basePrice*passengerCount;
     }
 }

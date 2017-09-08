@@ -73,14 +73,14 @@
                     <th>To</th>
                     <th>From</th>
                     <th>Departure Date</th>
-                    <!--<th>Price</th> -->
+                    <th>Price</th>
                 </tr>
                 <tr th:each="flight : ${availableFlights}">
                     <td th:text="${flight.flightName}" ></td>
                     <td th:text="${flight.to}" ></td>
                     <td th:text="${flight.from}" ></td>
                     <td th:text="${flight.departureDate}"></td>
-                   <!-- <td th:text="${flight.totalPrice}"></td> -->
+                    <td th:text="${flight.totalPrice}"></td>
                 </tr>
             </table>
         </div>

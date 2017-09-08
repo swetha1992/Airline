@@ -27,10 +27,15 @@ public class FlightRepository {
             for (Object obj : flights) {
                 JSONObject flight = (JSONObject) obj;
 
-                Map<String,Integer> flightClasses=new HashMap<String, Integer>();
-                flightClasses.put(ECONOMY_ID,Integer.parseInt((String)flight.get("economy_seats")));
-                flightClasses.put(FIRST_ID,Integer.parseInt((String)flight.get("first_class_seats")));
-                flightClasses.put(BUSINESS_ID,Integer.parseInt((String)flight.get("business_seats")));
+                Map<String,Integer> currentSeatAvailability=new HashMap<String, Integer>();
+                currentSeatAvailability.put(ECONOMY_ID,Integer.parseInt((String)flight.get("available_economy_seats")));
+                currentSeatAvailability.put(FIRST_ID,Integer.parseInt((String)flight.get("available_first_class_seats")));
+                currentSeatAvailability.put(BUSINESS_ID,Integer.parseInt((String)flight.get("available_business_seats")));
+
+                Map<String,Integer> totalSeatAvailability=new HashMap<String, Integer>();
+                totalSeatAvailability.put(ECONOMY_ID,Integer.parseInt((String)flight.get("total_economy_seats")));
+                totalSeatAvailability.put(FIRST_ID,Integer.parseInt((String)flight.get("total_first_class_seats")));
+                totalSeatAvailability.put(BUSINESS_ID,Integer.parseInt((String)flight.get("total_business_seats")));
 
                 Map<String,Integer> prices=new HashMap<String, Integer>();
                 prices.put(ECONOMY_ID,Integer.parseInt((String)flight.get("economy_price")));
@@ -41,7 +46,7 @@ public class FlightRepository {
                                                 (String) flight.get("to"),
                                                 (String) flight.get("from"),
                                                 utility.convertStringToLocalDate((String)flight.get("departure_date")),
-                                                flightClasses,prices);
+                                                currentSeatAvailability,prices,totalSeatAvailability);
                 flightList.add(flightObj);
             }
         } catch (Exception e) {

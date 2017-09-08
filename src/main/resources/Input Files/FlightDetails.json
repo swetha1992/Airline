@@ -1,16 +1,36 @@
 [
-  {"from" :"hyd", "to": "maa", "flight_name": "A1", "economy_seats":"2", "first_class_seats" :"10" ,"business_seats" :"1",
-    "departure_date" : "2017-09-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"hyd", "to": "maa", "flight_name": "A2", "economy_seats":"50", "first_class_seats" :"1", "business_seats" :"10",
-    "departure_date" : "2017-09-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"hyd", "to": "maa", "flight_name": "A3", "economy_seats":"100", "first_class_seats" :"50", "business_seats" :"10",
-    "departure_date" : "2017-09-10","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"blr", "to": "del", "flight_name": "B", "economy_seats":"70", "first_class_seats" :"50", "business_seats" :"10",
-    "departure_date" : "2017-11-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"hyd", "to": "blr", "flight_name": "C", "economy_seats":"200", "first_class_seats" :"50", "business_seats" :"10",
-    "departure_date" : "2017-12-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"hyd", "to": "blr", "flight_name": "D", "economy_seats":"150", "first_class_seats" :"50", "business_seats" :"10",
-    "departure_date" : "2017-09-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-  {"from" :"maa", "to": "hyd", "flight_name": "E", "economy_seats":"100", "first_class_seats" :"50", "business_seats" :"10",
-    "departure_date" : "2017-10-09","economy_price" : "6000","first_price" : "13000", "business_price" :"20000"}
+  {"from" :"hyd", "to": "maa", "flight_name": "A1", "departure_date" : "2017-09-09",
+    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"hyd", "to": "maa", "flight_name": "A2", "departure_date" : "2017-09-09",
+    "available_economy_seats":"20", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "10000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"hyd", "to": "maa", "flight_name": "A3", "departure_date" : "2017-09-10",
+    "available_economy_seats":"20", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"blr", "to": "del", "flight_name": "B", "departure_date" : "2017-11-09",
+    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"hyd", "to": "blr", "flight_name": "C", "departure_date" : "2017-12-09",
+    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"hyd", "to": "blr", "flight_name": "D", "departure_date" : "2017-09-09",
+    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
+
+  {"from" :"maa", "to": "hyd", "flight_name": "E",  "departure_date" : "2017-10-09",
+    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
+    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
+    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"}
 ]
