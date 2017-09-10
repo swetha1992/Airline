@@ -1,11 +1,15 @@
 package airline.model;
 
+/**
+ * Class that contains data the user Inputs.
+ */
 public class SearchCriteria {
     private String source;
     private String destination;
     private int passengerCount;
     private String departureDate;
     private String flightClass;
+
 
     public String getDepartureDate() { return departureDate; }
     public void setDepartureDate(String departureDate) { this.departureDate=departureDate; }
@@ -19,11 +23,7 @@ public class SearchCriteria {
         return passengerCount;
     }
     public void setPassengerCount(int passengerCount) {
-        if(passengerCount==0){
-            this.passengerCount=1;
-        }else{
-            this.passengerCount = passengerCount;
-        }
+        this.passengerCount = (passengerCount==0 ? 1 : passengerCount);
     }
     public String getFlightClass() { return flightClass; }
     public void setFlightClass(String flightClass) { this.flightClass = flightClass; }

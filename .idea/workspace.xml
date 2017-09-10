@@ -2,17 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9dc081f-98c4-4327-8669-4b225b33850a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/Repository/FlightRepository.class" afterPath="$PROJECT_DIR$/target/classes/airline/Repository/FlightRepository.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/airline/Repository/GeneralRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Input Files/FlightClass.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airline/Repository/FlightRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airline/Repository/GeneralRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airline/utility/Utility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/Input Files/FlightClass.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/airline/utility/Utility.java" afterPath="$PROJECT_DIR$/src/main/java/airline/utility/DateUtility.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/Input Files/FlightClass.json" afterPath="$PROJECT_DIR$/src/main/resources/Input Files/TravelClass.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/controller/FlightController.class" afterPath="$PROJECT_DIR$/target/classes/airline/controller/FlightController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/model/Flight.class" afterPath="$PROJECT_DIR$/target/classes/airline/model/Flight.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/model/SearchCriteria.class" afterPath="$PROJECT_DIR$/target/classes/airline/model/SearchCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/service/PriceService.class" afterPath="$PROJECT_DIR$/target/classes/airline/service/PriceService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/service/SearchService.class" afterPath="$PROJECT_DIR$/target/classes/airline/service/SearchService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/airline/model/FlightTest.class" afterPath="$PROJECT_DIR$/target/test-classes/airline/model/FlightTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/airline/service/SearchServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/airline/service/SearchServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java" afterPath="$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java" afterPath="$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" afterPath="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java" afterPath="$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" afterPath="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" afterPath="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json" afterPath="$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/airline/model/FlightTest.java" afterPath="$PROJECT_DIR$/src/test/airline/model/FlightTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" afterPath="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Input Files/FlightDetails.json" afterPath="$PROJECT_DIR$/target/classes/Input Files/FlightDetails.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources/Input Files/FlightDetails.json" afterPath="$PROJECT_DIR$/target/classes/resources/Input Files/FlightDetails.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources/templates/flightSearch.html" afterPath="$PROJECT_DIR$/target/classes/resources/templates/flightSearch.html" />
@@ -34,13 +49,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SearchCriteria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="106" lean-forward="true" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SearchService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="935">
+              <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#980#988#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlightTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/airline/model/FlightTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+              <folding>
+                <element signature="e#5408#5421#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,40 +119,8 @@
       <file leaf-file-name="FlightDetails.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightClass.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightClass.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -91,43 +129,31 @@
       <file leaf-file-name="PriceService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSearch.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="85">
+              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlightRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java">
+      <file leaf-file-name="FlightController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="47" column="80" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-35">
+              <caret line="10" column="110" lean-forward="false" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codes.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/codes.properties">
+      <file leaf-file-name="DateUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/utility/DateUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,26 +198,34 @@
         <option value="$PROJECT_DIR$/src/main/java/airline/service/FlightService.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
         <option value="$PROJECT_DIR$/src/main/java/airline/service/LocationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/utility/Utility.java" />
-        <option value="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/Repository/LocationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Input Files/class.json" />
         <option value="$PROJECT_DIR$/src/main/java/airline/FlightController.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/model/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/AirlineApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/Repository/DropDownRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/Repository/GeneralRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Property Files/codes.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/service/priceService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClassDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/searchResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/airline/model/FlightTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/Repository/GeneralRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/utility/Utility.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/CSS/AirlineApplicationCSS.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/CSS/Styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" />
         <option value="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/SearchResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/utility/DateUtility.java" />
+        <option value="$PROJECT_DIR$/src/test/airline/model/FlightTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
       </list>
     </option>
   </component>
@@ -326,6 +360,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="Input Files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,13 +407,21 @@
               <item name="airline" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="airline" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,42 +483,19 @@
       <module name="AirlineBooking" />
       <envs />
     </configuration>
-    <configuration name="FlightController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="airline.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="airline.FlightController" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AirlineBooking" />
-      <envs />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="maven spring-boot:run" />
-      </method>
-    </configuration>
-    <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="airline.model.*" />
+          <option name="PATTERN" value="airline.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AirlineBooking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="airline.model" />
-      <option name="MAIN_CLASS_NAME" value="airline.model.FlightTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueDepartureDateMatch" />
+      <option name="PACKAGE_NAME" value="airline.service" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightListWhenPassengerCountIsZero" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -481,19 +508,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlightTest.shouldReturnTrueIfDeparturDateIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="airline.model.*" />
+          <option name="PATTERN" value="airline.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AirlineBooking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="airline.model" />
-      <option name="MAIN_CLASS_NAME" value="airline.model.FlightTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueIfDeparturDateIsEmpty" />
+      <option name="PACKAGE_NAME" value="airline.service" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -506,19 +533,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="airline.model.*" />
+          <option name="PATTERN" value="airline.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AirlineBooking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="airline.model" />
-      <option name="MAIN_CLASS_NAME" value="airline.model.FlightTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueWhenMatchingFlightIsAvailable" />
+      <option name="PACKAGE_NAME" value="airline.service" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SearchServiceTest.shouldReturnThreeFlightsWhenMatchingFlightIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="airline.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AirlineBooking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="airline.service" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnThreeFlightsWhenMatchingFlightIsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -628,19 +680,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.airline" />
-      <item index="1" class="java.lang.String" itemvalue="Application.FlightController" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AirlineApplication" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueIfDeparturDateIsEmpty" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueDepartureDateMatch" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnThreeFlightsWhenMatchingFlightIsAvailable" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AirlineApplication" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.AirlineApplication" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueDepartureDateMatch" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueIfDeparturDateIsEmpty" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FlightController" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnThreeFlightsWhenMatchingFlightIsAvailable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst" />
       </list>
     </recent_temporary>
   </component>
@@ -658,35 +710,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 19m 00s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightListWhenPassengerCountIsZero - 2017.09.10 at 09h 41m 22s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 21m 13s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightListWhenPassengerCountIsZero - 2017.09.10 at 09h 42m 32s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 28m 45s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightListWhenPassengerCountIsZero - 2017.09.10 at 09h 43m 16s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 29m 30s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightListWhenPassengerCountIsZero - 2017.09.10 at 09h 43m 44s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 40m 52s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightListWhenPassengerCountIsZero - 2017.09.10 at 09h 44m 59s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightListWhenPassengerCountIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueDepartureDateMatch - 2017.09.06 at 16h 48m 08s.xml">
-      <configuration name="FlightTest.shouldReturnTrueDepartureDateMatch" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightsWhenMatchingPassengerCountIsAvailable - 2017.09.10 at 09h 34m 22s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueIfDeparturDateIsEmpty - 2017.09.06 at 16h 18m 27s.xml">
-      <configuration name="FlightTest.shouldReturnTrueIfDeparturDateIsEmpty" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightsWhenMatchingPassengerCountIsAvailable - 2017.09.10 at 09h 38m 46s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueWhenMatchingFlightIsAvailable - 2017.09.06 at 15h 33m 43s.xml">
-      <configuration name="FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness - 2017.09.10 at 09h 40m 37s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueWhenMatchingFlightIsAvailable - 2017.09.06 at 15h 51m 23s.xml">
-      <configuration name="FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst - 2017.09.10 at 09h 40m 25s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlightTest_shouldReturnTrueWhenMatchingFlightIsAvailable - 2017.09.06 at 15h 51m 33s.xml">
-      <configuration name="FlightTest.shouldReturnTrueWhenMatchingFlightIsAvailable" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnThreeFlightsWhenMatchingFlightIsAvailable - 2017.09.10 at 09h 42m 48s.xml">
+      <configuration name="SearchServiceTest.shouldReturnThreeFlightsWhenMatchingFlightIsAvailable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -703,61 +755,35 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21710527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8881579" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44407895" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47697368" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22617246" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53453946" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61513156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2631579" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21710527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03782895" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8881579" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10526316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6167763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63980263" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30484116" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45230263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -767,48 +793,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="83" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -828,7 +817,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -929,24 +920,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/airline/abcd.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Test.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -960,58 +937,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/LocationMaster.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/FlightInformation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/TravelClass.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/utility/Utility.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/GeneralRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="409" column="16" lean-forward="false" selection-start-line="409" selection-start-column="16" selection-end-line="409" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CSS/Styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/GeneralRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/codes.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/LocationMaster.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="125" lean-forward="false" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="107" lean-forward="false" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="9" column="106" lean-forward="true" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/airline/model/FlightTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        <state relative-caret-position="85">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/utility/DateUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1020,71 +1051,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="85">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightClass.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="935">
+          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#980#988#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/FlightRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="80" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="80" />
+        <state relative-caret-position="513">
+          <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5408#5421#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/codes.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="-35">
+          <caret line="10" column="110" lean-forward="false" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/FlightInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

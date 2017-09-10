@@ -1,36 +1,390 @@
 [
-  {"from" :"hyd", "to": "maa", "flight_name": "A1", "departure_date" : "2017-09-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"hyd", "to": "maa", "flight_name": "A2", "departure_date" : "2017-09-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "10000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"hyd", "to": "maa", "flight_name": "A3", "departure_date" : "2017-09-10",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"blr", "to": "del", "flight_name": "B", "departure_date" : "2017-11-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"hyd", "to": "blr", "flight_name": "C", "departure_date" : "2017-12-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"hyd", "to": "blr", "flight_name": "D", "departure_date" : "2017-09-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"},
-
-  {"from" :"maa", "to": "hyd", "flight_name": "E",  "departure_date" : "2017-10-09",
-    "available_economy_seats":"2", "available_first_class_seats" :"10" ,"available_business_seats" :"1",
-    "total_economy_seats":"50", "total_first_class_seats" :"30", "total_business_seats" :"10",
-    "economy_price" : "6000","first_price" : "13000", "business_price" :"20000"}
+  {
+    "from": "hyd",
+    "to": "maa",
+    "flight_name": "A1",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "0",
+        "total_seats": "30",
+        "base_price": "7000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "8000"
+      }
+    ]
+  },
+  {
+    "from": "hyd",
+    "to": "maa",
+    "flight_name": "A2",
+    "Flying_days": [
+      "Monday",
+      "Wednesday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "7000"
+      },
+      {
+        "class": "B",
+        "available_seats": "0",
+        "total_seats": "10",
+        "base_price": "8000"
+      }
+    ]
+  },
+  {
+    "from": "hyd",
+    "to": "maa",
+    "flight_name": "A3",
+    "Flying_days": [
+      "Sunday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "0",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "7000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "8000"
+      }
+    ]
+  },
+  {
+    "from": "blr",
+    "to": "maa",
+    "flight_name": "A4",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "del",
+    "to": "maa",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "del",
+    "to": "blr",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "blr",
+    "to": "maa",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "maa",
+    "to": "blr",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "del",
+    "to": "hyd",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "hyd",
+    "to": "del",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "del",
+    "to": "maa",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },
+  {
+    "from": "maa",
+    "to": "del",
+    "flight_name": "A5",
+    "Flying_days": [
+      "Monday",
+      "Wednesday",
+      "saturday"
+    ],
+    "travel_class": [
+      {
+        "class": "E",
+        "available_seats": "10",
+        "total_seats": "50",
+        "base_price": "6000"
+      },
+      {
+        "class": "F",
+        "available_seats": "10",
+        "total_seats": "30",
+        "base_price": "6000"
+      },
+      {
+        "class": "B",
+        "available_seats": "10",
+        "total_seats": "10",
+        "base_price": "6000"
+      }
+    ]
+  },{
+  "from": "blr",
+  "to": "hyd",
+  "flight_name": "A5",
+  "Flying_days": [
+    "Monday",
+    "Wednesday",
+    "saturday"
+  ],
+  "travel_class": [
+    {
+      "class": "E",
+      "available_seats": "10",
+      "total_seats": "50",
+      "base_price": "6000"
+    },
+    {
+      "class": "F",
+      "available_seats": "10",
+      "total_seats": "30",
+      "base_price": "6000"
+    },
+    {
+      "class": "B",
+      "available_seats": "10",
+      "total_seats": "10",
+      "base_price": "6000"
+    }
+  ]
+}
 ]

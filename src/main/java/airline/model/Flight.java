@@ -1,63 +1,44 @@
 package airline.model;
+import java.util.ArrayList;
+import java.util.List;
 
-import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.Map;
-
+/**
+ * Flight Class contains flight name,from,to, String array of days on which the flights fly
+ * (Assumed this coz, when ever the application is run we can check for the results instead of updating the repository
+ * every time.It also solves the problem of removing past dates),List of TravelClass
+ * (Modeled it this way coz, as per our business, each travel class ( E,F and B) has the following attribute
+ * - base price, total seats, available seats. So, they can be made as model/class and since each flight
+ * has atleast one of the travelclass, we can have list of this TravelClass object inside the flight class.
+ */
 public class Flight {
     private String flightName;
     private String to;
     private String from;
-    private LocalDate departureDate;
-    private Map<String, Integer> currentSeatAvailability = new HashMap<String, Integer>();
-    private Map<String, Integer> totalSeatAvailability = new HashMap<String, Integer>();
-    private Map<String, Integer> prices = new HashMap<String, Integer>();
-    private double totalPrice;
+    private List<String> flyingDays =new ArrayList<String>();
+    public List<String> getFlyingDays() {
+        return flyingDays;
+    }
+    private List<TravelClass> travelClass =new ArrayList<TravelClass>();
 
-
-    public Flight(String flightName, String to, String from, LocalDate departureDate, Map<String, Integer> flightClasses, Map<String, Integer> prices, Map<String, Integer> totalSeatAvailability) {
+    public Flight(String flightName, String from, String to, List<String> flyingDays, List<TravelClass> travelClass) {
         this.flightName = flightName;
         this.to = to;
         this.from = from;
-        this.departureDate = departureDate;
-        this.currentSeatAvailability = flightClasses;
-        this.prices = prices;
-        this.totalSeatAvailability = totalSeatAvailability;
+        this.flyingDays = flyingDays;
+        this.travelClass = travelClass;
     }
 
     public String getTo() {
         return to;
     }
-
     public String getFlightName() {
         return flightName;
     }
-
     public String getFrom() {
         return from;
     }
-
-    public LocalDate getDepartureDate() {
-        return departureDate;
-    }
-
-    public Map<String, Integer> getPrices() {
-        return prices;
-    }
-
-    public double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
-    public Map<String, Integer> getCurrentSeatAvailability() {
-        return currentSeatAvailability;
-    }
-    public Map<String, Integer> getTotalSeatAvailability() {
-        return totalSeatAvailability;
+    public List<TravelClass> getTravelClass() {
+        return travelClass;
     }
 
 }

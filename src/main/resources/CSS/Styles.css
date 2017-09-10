@@ -1,0 +1,54 @@
+  body {
+            font-family: Tahoma;
+            font-size: 12pt;
+            text-align: center;
+        }
+  table {
+    border: 1px solid #cdcdcd;
+    font-size: 14px;
+    table-layout: fixed;
+    width: 200px;
+    margin-left: -74px;
+}
+th{
+       width: 100px;
+       font-family: Tahoma;
+       background-color: #4CAF50;
+}
+ td{
+     width: 100px;
+     font-family: Tahoma;
+}
+.inputtextbox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    font-size: 12px;
+    width: 100px;
+}
+.dropdown{
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    font-size: 12px;
+    width: 140px;
+}
+
+.submit {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+}

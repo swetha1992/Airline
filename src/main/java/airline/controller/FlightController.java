@@ -1,6 +1,5 @@
 package airline.controller;
-
-import airline.Repository.GeneralRepository;
+import airline.Repository.Repository;
 import airline.model.SearchCriteria;
 import airline.service.SearchService;
 import org.springframework.stereotype.Controller;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 /**
- * Created by rajashrk on 8/8/17.
+ * Controller class maps the url to view/html and according to rwquest calls the corresponding service method.
  */
 @Controller
 public class FlightController {
@@ -17,6 +16,8 @@ public class FlightController {
     @RequestMapping("/")
     public String homePage(@ModelAttribute(value="SearchCriteria")SearchCriteria SearchCriteria,Model model) {
         model.addAttribute("SearchCriteria",SearchCriteria);
+        Repository repository=new Repository();
+        repository.getFlights();
         return "flightSearch";
     }
 
@@ -28,12 +29,12 @@ public class FlightController {
     }
     @ModelAttribute("locations")
     public Map<String,String> getLocations() {
-        GeneralRepository generalRepository=new GeneralRepository();
-        return generalRepository.getLocations();
+        Repository repository=new Repository();
+        return repository.getLocations();
     }
     @ModelAttribute("flightClasses")
     public Map<String,String> getFlightClasses() {
-        GeneralRepository generalRepository=new GeneralRepository();
-        return generalRepository.getFlightClass();
+       Repository repository=new Repository();
+        return repository.getFlightClass();
     }
 }
