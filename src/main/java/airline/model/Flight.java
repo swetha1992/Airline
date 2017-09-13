@@ -41,4 +41,10 @@ public class Flight {
         return travelClass;
     }
 
+
+    public TravelClass getSelectedTravelClass(SearchCriteria searchCriteria){
+        return getTravelClass().stream()
+                .filter(travelClass -> travelClass.getTravelClass().
+                        equals(searchCriteria.getFlightClass())).findAny().orElse(null);
+    }
 }

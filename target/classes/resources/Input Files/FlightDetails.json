@@ -23,7 +23,7 @@
       },
       {
         "class": "B",
-        "available_seats": "10",
+        "available_seats": "8",
         "total_seats": "10",
         "base_price": "8000"
       }
@@ -82,7 +82,7 @@
       },
       {
         "class": "B",
-        "available_seats": "10",
+        "available_seats": "8",
         "total_seats": "10",
         "base_price": "8000"
       }
@@ -151,7 +151,7 @@
   {
     "from": "del",
     "to": "blr",
-    "flight_name": "A5",
+    "flight_name": "A6",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -181,7 +181,7 @@
   {
     "from": "blr",
     "to": "maa",
-    "flight_name": "A5",
+    "flight_name": "A7",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -211,7 +211,7 @@
   {
     "from": "maa",
     "to": "blr",
-    "flight_name": "A5",
+    "flight_name": "A8",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -241,7 +241,7 @@
   {
     "from": "del",
     "to": "hyd",
-    "flight_name": "A5",
+    "flight_name": "A9",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -271,7 +271,7 @@
   {
     "from": "hyd",
     "to": "del",
-    "flight_name": "A5",
+    "flight_name": "A10",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -301,7 +301,7 @@
   {
     "from": "del",
     "to": "maa",
-    "flight_name": "A5",
+    "flight_name": "A11",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -331,7 +331,7 @@
   {
     "from": "maa",
     "to": "del",
-    "flight_name": "A5",
+    "flight_name": "A12",
     "Flying_days": [
       "Monday",
       "Wednesday",
@@ -360,7 +360,7 @@
   },{
   "from": "blr",
   "to": "hyd",
-  "flight_name": "A5",
+  "flight_name": "A13",
   "Flying_days": [
     "Monday",
     "Wednesday",

@@ -77,6 +77,10 @@ public class Repository {
         }
         return locationMap;
     }
+    /**
+     * Function Parses over the JSON file to build a map of  the flight classes and its corresponding ID.
+     * @return List
+     */
     public Map<String,String> getFlightClass() {
         Map<String,String> classMap = new LinkedHashMap<String,String>();
         JSONParser parser = new JSONParser();

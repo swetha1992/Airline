@@ -32,4 +32,8 @@ public class TravelClass {
     public double getBasePrice() {
         return basePrice;
     }
+
+    public double getPercentageOfSeatsFilled(){
+        return  (((double) getTotalSeats() - (double) getAvailableSeats()) / (double) getTotalSeats()) * 100;
+    }
 }

@@ -37,7 +37,7 @@ public class SearchServiceTest {
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");
         SearchService searchService = new SearchService();
-        Assert.assertEquals(3, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(3, searchService.getsearchResult(searchCriteria).size());
     }
 
     @Test
@@ -57,7 +57,7 @@ public class SearchServiceTest {
         searchCriteria.setDestination("maa");
         searchCriteria.setDepartureDate("2017-09-10");
         SearchService searchService = new SearchService();
-        Assert.assertEquals(1, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(1, searchService.getsearchResult(searchCriteria).size());
     }
     @Test
     public void shouldReturnFlightsWhenMatchingPassengerCountIsAvailable() {
@@ -77,7 +77,7 @@ public class SearchServiceTest {
         searchCriteria.setFlightClass("E");
         searchCriteria.setPassengerCount(7);
         SearchService searchService = new SearchService();
-        Assert.assertEquals(2, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(2, searchService.getsearchResult(searchCriteria).size());
     }
     @Test
     public void shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForFirst() {
@@ -97,7 +97,7 @@ public class SearchServiceTest {
         searchCriteria.setFlightClass("F");
         searchCriteria.setPassengerCount(7);
         SearchService searchService = new SearchService();
-        Assert.assertEquals(2, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(2, searchService.getsearchResult(searchCriteria).size());
     }
     @Test
     public void shouldReturnFlightsWhenMatchingPassengerCountIsAvailableForBusiness() {
@@ -117,7 +117,7 @@ public class SearchServiceTest {
         searchCriteria.setFlightClass("B");
         searchCriteria.setPassengerCount(7);
         SearchService searchService = new SearchService();
-        Assert.assertEquals(2, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(2, searchService.getsearchResult(searchCriteria).size());
     }
     @Test
     public void shouldReturnFlightListWhenPassengerCountIsZero() {
@@ -135,6 +135,6 @@ public class SearchServiceTest {
         searchCriteria.setSource("hyd");
         searchCriteria.setDestination("maa");
         SearchService searchService = new SearchService();
-        Assert.assertEquals(3, searchService.searchFlight(searchCriteria).size());
+        Assert.assertEquals(3, searchService.getsearchResult(searchCriteria).size());
     }
 }

@@ -24,9 +24,11 @@ public class FlightController {
     @RequestMapping(value = "/search", method=RequestMethod.POST)
     public String searchResult(@ModelAttribute(value="SearchCriteria")SearchCriteria searchCriteria, Model model) {
         SearchService searchService = new SearchService();
-        model.addAttribute("availableFlights", searchService.searchFlight(searchCriteria));
+        model.addAttribute("availableFlights", searchService.getsearchResult(searchCriteria));
         return "flightSearch";
     }
+
+
     @ModelAttribute("locations")
     public Map<String,String> getLocations() {
         Repository repository=new Repository();
