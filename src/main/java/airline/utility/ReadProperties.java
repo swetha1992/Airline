@@ -1,18 +1,19 @@
 package airline.utility;
-
-import org.omg.CORBA.Environment;
-import org.springframework.beans.factory.annotation.Autowired;
-
+import java.io.FileInputStream;
+import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
 public class ReadProperties {
 
-    @Autowired
-    private Environment env;
-
     public String getProperty(String property){
-        ResourceBundle resourceBundle =
-                ResourceBundle.getBundle("flight.properties");
-        return resourceBundle.getString(property);
+        String propertyValue = "";
+    try {
+        FileInputStream file = new FileInputStream("src\\main\\resources\\Property Files\\flight.properties");
+        ResourceBundle resourceBundle = new PropertyResourceBundle(file);
+        propertyValue = resourceBundle.getString(property);
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+    return propertyValue;
     }
 }

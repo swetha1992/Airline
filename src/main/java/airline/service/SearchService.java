@@ -3,7 +3,6 @@ package airline.service;
 import airline.Repository.Repository;
 import airline.model.Flight;
 import airline.model.SearchCriteria;
-import airline.model.TravelClass;
 import airline.model.SearchResult;
 import airline.utility.DateUtility;
 

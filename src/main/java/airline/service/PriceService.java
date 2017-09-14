@@ -4,10 +4,15 @@ import airline.model.Flight;
 import airline.model.SearchCriteria;
 import airline.model.SearchResult;
 import airline.model.TravelClass;
+import airline.utility.DateUtility;
 import airline.utility.ReadProperties;
 
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Service class to calculate price /
@@ -21,26 +26,13 @@ public class PriceService {
      * @param searchCriteria
      * @return
      */
-
-    String ECONOMY_ID ="E";
-    String FIRST_CLASS_ID ="F";
-    String BUSINESS_ID ="B";
-    int ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_1 = 50;
-    int ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_2 = 90;
-    int ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_1 = 30;
-    int ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_2 = 60;
-    String BUSINESS_FLYING_DAYS_MONDAY = "MONDAY";
-    String BUSINESS_FLYING_DAYS_FRIDAY = "FRIDAY";
-    String BUSINESS_FLYING_DAYS_SUNDAY = "SUNDAY";
+    ReadProperties readProperties = new ReadProperties();
 
     public List<SearchResult> calculateFare(List<Flight> flights, SearchCriteria searchCriteria) {
-        List<SearchResult> searchResults = new ArrayList<SearchResult>();
-        for (Flight flight : flights) {
-            SearchResult searchResult = new SearchResult(flight.getFlightName(), flight.getFrom(),
-                                        flight.getTo(), determineFareForEachFlight(flight, searchCriteria));
-            searchResults.add(searchResult);
-        }
-        return searchResults;
+        return flights.stream().map(flight ->
+                new SearchResult(flight.getFlightName(), flight.getFrom(), flight.getTo(),
+                        determineFareForEachFlight(flight, searchCriteria)))
+                .collect(Collectors.toList());
     }
 
     /**
@@ -51,27 +43,27 @@ public class PriceService {
      * @return
      */
     public Double determineFareForEachFlight(Flight flight, SearchCriteria searchCriteria) {
+
         TravelClass travelClass = flight.getSelectedTravelClass(searchCriteria);
         double totalFare = 0, extraCost = 0.0;
-        ReadProperties readProperties=new ReadProperties();
-        if (travelClass.getTravelClass().equals(ECONOMY_ID)) {
-            extraCost = extraCostForEconomy(travelClass.getPercentageOfSeatsFilled(),travelClass.getBasePrice());
-        } else if (travelClass.getTravelClass().equals(FIRST_CLASS_ID)) {
-            extraCost = extraCostForFirst();
-        } else if (travelClass.getTravelClass().equals(BUSINESS_ID)) {
+        if (travelClass.getTravelClass().equals(readProperties.getProperty("ECONOMY_ID"))) {
+            extraCost = extraCostForEconomy(travelClass.getPercentageOfSeatsFilled(), travelClass.getBasePrice());
+        } else if (travelClass.getTravelClass().equals(readProperties.getProperty("FIRST_CLASS_ID"))) {
+            extraCost = extraCostForFirst(searchCriteria, travelClass.getBasePrice());
+        } else if (travelClass.getTravelClass().equals(readProperties.getProperty("BUSINESS_ID"))) {
             extraCost = extraCostForBusiness(flight.getFlyingDays(), travelClass.getBasePrice());
         }
         totalFare = travelClass.getBasePrice() * searchCriteria.getPassengerCount() + extraCost;
         return totalFare;
     }
 
-    public Double extraCostForEconomy(double percentageOfSeatsFilled,double basePrice ) {
+    public Double extraCostForEconomy(double percentageOfSeatsFilled, double basePrice) {
         double extraCost = 0;
-        if (percentageOfSeatsFilled >= ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_1
-                                        && percentageOfSeatsFilled <= ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_2) {
-            extraCost = (basePrice * ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_1) / 100;
-        } else if (percentageOfSeatsFilled > ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_2) {
-            extraCost = (basePrice * ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_2) / 100;
+        if (percentageOfSeatsFilled >= Double.parseDouble(readProperties.getProperty("ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_1"))
+                && percentageOfSeatsFilled <= Double.parseDouble(readProperties.getProperty("ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_2"))) {
+            extraCost = (basePrice * Double.parseDouble(readProperties.getProperty("ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_1"))) / 100;
+        } else if (percentageOfSeatsFilled > Double.parseDouble(readProperties.getProperty("ECONOMY_PERCENTAGE_OF_SEATS_FOR_SURGE_PRICE_STAGE_2"))) {
+            extraCost = (basePrice * Double.parseDouble(readProperties.getProperty("ECONOMY_PERCENTAGE_FOR_SURGE_PRICE_STAGE_2"))) / 100;
         } else {
             extraCost = 0.0;
         }
@@ -80,16 +72,28 @@ public class PriceService {
 
     public Double extraCostForBusiness(List<String> days, double basePrice) {
         double extraCost = 0;
-        if (days.contains(BUSINESS_FLYING_DAYS_MONDAY) ||
-                days.contains(BUSINESS_FLYING_DAYS_FRIDAY) ||
-                days.contains(BUSINESS_FLYING_DAYS_SUNDAY)) {
-            extraCost = basePrice * 40 / 100;
+        if (days.contains(readProperties.getProperty("BUSINESS_FLYING_DAYS_MONDAY")) ||
+                days.contains(readProperties.getProperty("BUSINESS_FLYING_DAYS_FRIDAY")) ||
+                days.contains(readProperties.getProperty("BUSINESS_FLYING_DAYS_SUNDAY"))) {
+            extraCost = basePrice * Integer.parseInt(readProperties.getProperty("BUSINESS_CLASS_PERCENTAGE_INCREASE")) / 100;
         }
         return extraCost;
     }
 
-    public Double extraCostForFirst() {
+    public Double extraCostForFirst(SearchCriteria searchCriteria, double basePrice) {
         double extraCost = 0;
+        if (searchCriteria.getDepartureDate() != null && searchCriteria.getDepartureDate() != "") {
+            DateUtility dateUtility = new DateUtility();
+            LocalDate bookingDate = dateUtility.convertStringToLocalDate(searchCriteria.getDepartureDate());
+            Period daysBetween = LocalDate.now().until(bookingDate);
+            if (daysBetween.getDays() > 0 && daysBetween.getDays() <= Integer.parseInt(readProperties.getProperty("FIRST_CLASS_BOOKING_OPEN_DAYS")))
+            {
+                int surgePercentage = (Integer.parseInt(readProperties.getProperty("FIRST_CLASS_BOOKING_OPEN_DAYS"))
+                        - daysBetween.getDays())
+                        * Integer.parseInt(readProperties.getProperty("FIRST_CLASS_PERCENTAGE_INCREASE"));
+                extraCost = (basePrice * surgePercentage) / 100;
+            }
+        }
         return extraCost;
     }
 }
