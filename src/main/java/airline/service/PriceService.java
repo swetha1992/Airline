@@ -30,7 +30,7 @@ public class PriceService {
 
     public List<SearchResult> calculateFare(List<Flight> flights, SearchCriteria searchCriteria) {
         return flights.stream().map(flight ->
-                new SearchResult(flight.getFlightName(), flight.getFrom(), flight.getTo(),
+                new SearchResult(flight.getFlightName(), flight.getFrom().getCityName(), flight.getTo().getCityName(),
                         determineFareForEachFlight(flight, searchCriteria)))
                 .collect(Collectors.toList());
     }

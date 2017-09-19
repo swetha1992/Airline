@@ -34,8 +34,8 @@ public class SearchService {
         List<Flight> allFlights = repository.getFlights();
         DateUtility dateUtility = new DateUtility();
         return allFlights.stream()
-                .filter(flight -> flight.getFrom().equals(searchCriteria.getSource()))
-                .filter(flight -> flight.getTo().equals(searchCriteria.getDestination()))
+                .filter(flight -> flight.getFrom().getCityId().equals(searchCriteria.getSource()))
+                .filter(flight -> flight.getTo().getCityId().equals(searchCriteria.getDestination()))
                 .filter(flight -> flight.getSelectedTravelClass(searchCriteria).getAvailableSeats() >=
                                         searchCriteria.getPassengerCount())
                 .filter(flight -> (null == searchCriteria.getDepartureDate() ||

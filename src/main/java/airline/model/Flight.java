@@ -12,15 +12,12 @@ import java.util.List;
  */
 public class Flight {
     private String flightName;
-    private String to;
-    private String from;
+    private City to;
+    private City from;
     private List<String> flyingDays =new ArrayList<String>();
-    public List<String> getFlyingDays() {
-        return flyingDays;
-    }
     private List<TravelClass> travelClass =new ArrayList<TravelClass>();
 
-    public Flight(String flightName, String from, String to, List<String> flyingDays, List<TravelClass> travelClass) {
+    public Flight(String flightName, City from, City to, List<String> flyingDays, List<TravelClass> travelClass) {
         this.flightName = flightName;
         this.to = to;
         this.from = from;
@@ -28,19 +25,21 @@ public class Flight {
         this.travelClass = travelClass;
     }
 
-    public String getTo() {
+    public City getTo() {
         return to;
     }
     public String getFlightName() {
         return flightName;
     }
-    public String getFrom() {
+    public City getFrom() {
         return from;
     }
     public List<TravelClass> getTravelClass() {
         return travelClass;
     }
-
+    public List<String> getFlyingDays() {
+        return flyingDays;
+    }
 
     public TravelClass getSelectedTravelClass(SearchCriteria searchCriteria){
         return getTravelClass().stream()

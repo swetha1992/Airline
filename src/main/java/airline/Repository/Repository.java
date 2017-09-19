@@ -1,5 +1,6 @@
 package airline.Repository;
 
+import airline.model.City;
 import airline.model.Flight;
 import airline.model.TravelClass;
 import org.json.simple.JSONArray;
@@ -48,9 +49,9 @@ public class Repository {
                                     Double.parseDouble((String)travelClass.get("base_price")));
                     travelClasses.add(t);
                 }
-                Flight flightObj = new Flight((String) flight.get("flight_name"),
-                                                (String) flight.get("from"),
-                                                (String) flight.get("to"),
+                City to =new City((String) flight.get("to"), getLocations().get((String)flight.get("to")));
+                City from =new City((String) flight.get("from"),getLocations().get((String)flight.get("from")));
+                Flight flightObj = new Flight((String) flight.get("flight_name"),from,to,
                                                 flyingDays,travelClasses);
                 flightList.add(flightObj);
             }
