@@ -4,6 +4,65 @@
     <title>Airline Booking Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="CSS/Styles.css"/>
+
+    <!-- Temporary fix . CSS file is not getting referenced. Happened while trying to delete some
+    unused property files. Checking under process.-->
+    <style>
+ body {
+    font-family: Tahoma;
+    font-size: 12pt;
+    text-align: center;
+}
+  table {
+    border: 1px solid #cdcdcd;
+    font-size: 14px;
+    table-layout: fixed;
+    width: 200px;
+    margin-left: -74px;
+}
+th{
+       width: 100px;
+       font-family: Tahoma;
+       background-color: #4CAF50;
+}
+ td{
+     width: 100px;
+     font-family: Tahoma;
+}
+.inputtextbox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    font-size: 12px;
+    width: 100px;
+}
+.dropdown{
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    font-size: 12px;
+    width: 140px;
+}
+
+.submit {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+}
+    </style>
 </head>
 <body>
 <div>
@@ -21,7 +80,7 @@
     <option value="">Select Destination</option>
     <option th:each="location : ${locations}" th:value="${location.key}" th:text="${location.value}"></option>
 </select> <br/> <br/> <br/>
-    Passenger Count : <input type="number" th:field="${SearchCriteria.passengerCount}" class="inputtextbox" th:required="true"/> &nbsp;&nbsp;&nbsp;
+    Passenger Count : <input type="number" th:field="${SearchCriteria.passengerCount}" class="inputtextbox"/> &nbsp;&nbsp;&nbsp;
     Departure Date : <input type="date" th:field="${SearchCriteria.departureDate}"/> <br/> <br/> <br/>
     Class : <select id="class" name="class" th:field="${SearchCriteria.flightClass}" class="dropdown">
     <option th:each="flightClass : ${flightClasses}" th:value="${flightClass.key}"
