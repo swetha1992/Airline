@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9dc081f-98c4-4327-8669-4b225b33850a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flightProperties.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airline/model/TravelClass.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/Repository/Repository.class" afterPath="$PROJECT_DIR$/target/classes/airline/Repository/Repository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/model/Flight.class" afterPath="$PROJECT_DIR$/target/classes/airline/model/Flight.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/service/PriceService.class" afterPath="$PROJECT_DIR$/target/classes/airline/service/PriceService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airline/service/SearchService.class" afterPath="$PROJECT_DIR$/target/classes/airline/service/SearchService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/airline/repository/MockRepository.class" afterPath="$PROJECT_DIR$/target/test-classes/airline/repository/MockRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/airline/service/PriceServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/airline/service/PriceServiceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/airline/service/SearchServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/airline/service/SearchServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java" afterPath="$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" afterPath="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" afterPath="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" afterPath="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/airline/repository/MockRepository.java" afterPath="$PROJECT_DIR$/src/test/airline/repository/MockRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java" afterPath="$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" afterPath="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/flightSearch.html" afterPath="$PROJECT_DIR$/target/classes/templates/flightSearch.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,13 +39,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MockRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/airline/repository/MockRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="40" column="85" lean-forward="false" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1210#1228#0" expanded="true" />
+                <element signature="e#1306#1324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AirlineApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/AirlineApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PriceService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlightDetailsTestData.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetailsTestData.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="60" column="3" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flight.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/flight.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelClassFares.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClassFares.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelClassSeats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClassSeats.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PriceServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="105" column="31" lean-forward="false" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#663#681#0" expanded="true" />
+                <element signature="e#1038#1056#0" expanded="true" />
+                <marker date="1505979451123" expanded="false" signature="1422:1430" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -37,52 +131,22 @@
       <file leaf-file-name="SearchServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AirlineApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/airline/AirlineApplication.java">
+      <file leaf-file-name="Repository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="374">
+              <caret line="51" column="93" lean-forward="false" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
               <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#1759#1777#0" expanded="true" />
+                <element signature="e#1855#1873#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightProperties.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flightProperties.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSearch.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/CSS/Styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -117,9 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/airline/Flights.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/FlightDetails.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/FlightDetails.xml" />
         <option value="$PROJECT_DIR$/src/main/java/airline/Flight.java" />
         <option value="$PROJECT_DIR$/src/main/resources/LocationMaster.json" />
         <option value="$PROJECT_DIR$/src/main/java/airline/FlightService.java" />
@@ -153,20 +214,24 @@
         <option value="$PROJECT_DIR$/src/main/java/airline/utility/PropertyFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/controller/FlightController.java" />
-        <option value="$PROJECT_DIR$/flightProperties.properties" />
         <option value="$PROJECT_DIR$/src/main/java/airline/utility/ReadProperties.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Property Files/flight.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Input Files/FlightDetailsTestData.json" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/City.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClassPrice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClassPrices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/model/Flight.java" />
         <option value="$PROJECT_DIR$/src/main/java/airline/service/PriceService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/model/City.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/service/SearchService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/airline/repository/MockRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java" />
-        <option value="$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClassSeats.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/flightSearch.html" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/model/TravelClassFares.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java" />
+        <option value="$PROJECT_DIR$/src/test/airline/repository/MockRepository.java" />
+        <option value="$PROJECT_DIR$/flightProperties.properties" />
+        <option value="$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java" />
       </list>
     </option>
   </component>
@@ -210,8 +275,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -253,15 +318,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="airline" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="airline" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,15 +343,6 @@
               <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="airline" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -305,6 +352,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="CSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Input Files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
@@ -334,6 +389,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="airline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AirlineBooking" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="airline" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AirlineBooking" type="b2602c69:ProjectViewProjectNode" />
@@ -408,7 +471,7 @@
       <module name="AirlineBooking" />
       <envs />
     </configuration>
-    <configuration name="PriceServiceTest.shouldReturnPriceForBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightsBasedOnAvailability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="airline.service.*" />
@@ -419,8 +482,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="airline.service" />
-      <option name="MAIN_CLASS_NAME" value="airline.service.PriceServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnPriceForBusiness" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightsBasedOnAvailability" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -433,7 +496,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PriceServiceTest.shouldReturnTotalPriceForBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightsBasedOnDayOfTravel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="airline.service.*" />
@@ -444,8 +507,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="airline.service" />
-      <option name="MAIN_CLASS_NAME" value="airline.service.PriceServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnTotalPriceForBusiness" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightsBasedOnDayOfTravel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -458,7 +521,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PriceServiceTest.shouldReturnTotalPriceForEconomy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnFlightsWhenPassengerCountIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="airline.service.*" />
@@ -469,8 +532,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="airline.service" />
-      <option name="MAIN_CLASS_NAME" value="airline.service.PriceServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnTotalPriceForEconomy" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnFlightsWhenPassengerCountIsZero" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -483,7 +546,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PriceServiceTest.shouldReturnTotalPriceForFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceTest.shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="airline.service.*" />
@@ -494,8 +557,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="airline.service" />
-      <option name="MAIN_CLASS_NAME" value="airline.service.PriceServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnTotalPriceForFirst" />
+      <option name="MAIN_CLASS_NAME" value="airline.service.SearchServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -605,19 +668,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.airline" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnPriceForBusiness" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForEconomy" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForFirst" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForBusiness" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsBasedOnAvailability" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsBasedOnDayOfTravel" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenPassengerCountIsZero" />
       <item index="5" class="java.lang.String" itemvalue="Application.AirlineApplication" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.AirlineApplication" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForBusiness" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForFirst" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnTotalPriceForEconomy" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PriceServiceTest.shouldReturnPriceForBusiness" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsWhenPassengerCountIsZero" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsBasedOnDayOfTravel" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SearchServiceTest.shouldReturnFlightsBasedOnAvailability" />
       </list>
     </recent_temporary>
   </component>
@@ -635,35 +698,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PriceServiceTest_shouldReturnPriceForBusiness - 2017.09.20 at 12h 04m 12s.xml">
-      <configuration name="PriceServiceTest.shouldReturnPriceForBusiness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnPriceForFirst - 2017.09.20 at 12h 03m 51s.xml">
-      <configuration name="PriceServiceTest.shouldReturnPriceForFirst" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForBusiness - 2017.09.20 at 12h 07m 10s.xml">
+    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForBusiness - 2017.09.21 at 13h 07m 19s.xml">
       <configuration name="PriceServiceTest.shouldReturnTotalPriceForBusiness" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForBusiness - 2017.09.20 at 12h 07m 29s.xml">
-      <configuration name="PriceServiceTest.shouldReturnTotalPriceForBusiness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForBusiness - 2017.09.20 at 12h 07m 49s.xml">
-      <configuration name="PriceServiceTest.shouldReturnTotalPriceForBusiness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForEconomy - 2017.09.20 at 12h 04m 38s.xml">
+    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForEconomy - 2017.09.21 at 13h 06m 43s.xml">
       <configuration name="PriceServiceTest.shouldReturnTotalPriceForEconomy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForEconomy - 2017.09.20 at 12h 04m 59s.xml">
-      <configuration name="PriceServiceTest.shouldReturnTotalPriceForEconomy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForEconomy - 2017.09.20 at 12h 05m 43s.xml">
-      <configuration name="PriceServiceTest.shouldReturnTotalPriceForEconomy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForFirst - 2017.09.20 at 12h 06m 18s.xml">
+    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForFirst - 2017.09.21 at 13h 07m 06s.xml">
       <configuration name="PriceServiceTest.shouldReturnTotalPriceForFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PriceServiceTest_shouldReturnTotalPriceForFirst - 2017.09.20 at 12h 06m 41s.xml">
-      <configuration name="PriceServiceTest.shouldReturnTotalPriceForFirst" configurationId="JUnit" />
+    <history-entry file="SearchServiceTest_shouldReturnFlightsBasedOnAvailability - 2017.09.21 at 13h 08m 06s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsBasedOnAvailability" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnFlightsBasedOnDayOfTravel - 2017.09.21 at 13h 08m 32s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsBasedOnDayOfTravel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnFlightsBasedOnDayOfTravel - 2017.09.21 at 13h 08m 45s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsBasedOnDayOfTravel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnFlightsWhenPassengerCountIsZero - 2017.09.21 at 13h 08m 55s.xml">
+      <configuration name="SearchServiceTest.shouldReturnFlightsWhenPassengerCountIsZero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable - 2017.09.21 at 13h 07m 55s.xml">
+      <configuration name="SearchServiceTest.shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable - 2017.09.21 at 13h 09m 06s.xml">
+      <configuration name="SearchServiceTest.shouldReturnTwoFlightsWhenMatchingFlightAreNotAvailable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceTest_shouldReturnZeroFlightsWhenMatchingFlightAreNotAvailable - 2017.09.21 at 13h 07m 40s.xml">
+      <configuration name="SearchServiceTest.shouldReturnZeroFlightsWhenMatchingFlightAreNotAvailable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -687,25 +750,44 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8881579" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0052950075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14144737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38980263" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71546054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22919819" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1513158" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37828946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8881579" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0052950075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61513156" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14144737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71546054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -719,45 +801,43 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/airline/repository/MockRepository.java</url>
-          <line>48</line>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java</url>
-          <line>20</line>
+          <url>file://$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java</url>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="150" />
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java</url>
+          <line>57</line>
           <properties />
-          <option name="timeStamp" value="151" />
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java</url>
+          <line>41</line>
           <properties />
-          <option name="timeStamp" value="153" />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="161" />
+      <option name="time" value="166" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/LocationService.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/time/chrono/ChronoLocalDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5">
@@ -876,33 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#131#132#0" expanded="false" />
-            <element signature="e#160#161#0" expanded="false" />
-            <element signature="e#195#196#0" expanded="false" />
-            <element signature="e#226#227#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -932,60 +985,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/airline/repository/MockRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetailsTestData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="3" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="49" column="41" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="3" lean-forward="false" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,18 +1000,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CSS/Styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="341">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClass.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/SearchCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <element signature="e#926#944#0" expanded="true" />
+            <element signature="e#1014#1032#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="125" lean-forward="false" selection-start-line="82" selection-start-column="125" selection-end-line="82" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetails.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="90" column="3" lean-forward="false" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClassSeats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightProperties.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/flight.properties">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Input Files/FlightDetailsTestData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="60" column="3" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/Repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="51" column="93" lean-forward="false" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
+          <folding>
+            <element signature="e#1759#1777#0" expanded="true" />
+            <element signature="e#1855#1873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/service/PriceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/airline/repository/MockRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="40" column="85" lean-forward="false" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1210#1228#0" expanded="true" />
+            <element signature="e#1306#1324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#663#681#0" expanded="true" />
+            <element signature="e#1038#1056#0" expanded="true" />
+            <marker date="1505979451123" expanded="false" signature="1422:1430" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airline/model/TravelClassFares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1017,59 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/airline/service/PriceServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="31" lean-forward="false" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/airline/service/SearchServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Property Files/flight.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightProperties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CSS/Styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/flightSearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>

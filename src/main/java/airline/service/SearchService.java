@@ -36,7 +36,7 @@ public class SearchService {
         return allFlights.stream()
                 .filter(flight -> flight.getFrom().getCityId().equals(searchCriteria.getSource()))
                 .filter(flight -> flight.getTo().getCityId().equals(searchCriteria.getDestination()))
-                .filter(flight -> flight.getSelectedTravelClass(searchCriteria).getAvailableSeats() >=
+                .filter(flight -> flight.getSelectedTravelClassSeats(searchCriteria).getAvailableSeats() >=
                                         searchCriteria.getPassengerCount())
                 .filter(flight -> (null == searchCriteria.getDepartureDate() ||
                                 searchCriteria.getDepartureDate() == "" ||

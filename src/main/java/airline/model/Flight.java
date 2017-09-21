@@ -15,14 +15,20 @@ public class Flight {
     private City to;
     private City from;
     private List<String> flyingDays =new ArrayList<String>();
-    private List<TravelClass> travelClass =new ArrayList<TravelClass>();
+    private List<TravelClassSeats> travelClassSeats =new ArrayList<TravelClassSeats>();
+    private List<TravelClassFares> travelClassFares =new ArrayList<TravelClassFares>();
 
-    public Flight(String flightName, City from, City to, List<String> flyingDays, List<TravelClass> travelClass) {
+    public Flight(String flightName, City from, City to, List<String> flyingDays, List<TravelClassSeats> travelClassSeats,List<TravelClassFares> travelClassFares) {
         this.flightName = flightName;
         this.to = to;
         this.from = from;
         this.flyingDays = flyingDays;
-        this.travelClass = travelClass;
+        this.travelClassSeats = travelClassSeats;
+        this.travelClassFares = travelClassFares;
+    }
+
+    public List<TravelClassFares> getTravelClassFares() {
+        return travelClassFares;
     }
 
     public City getTo() {
@@ -34,16 +40,22 @@ public class Flight {
     public City getFrom() {
         return from;
     }
-    public List<TravelClass> getTravelClass() {
-        return travelClass;
+    public List<TravelClassSeats> getTravelClassSeats() {
+        return travelClassSeats;
     }
     public List<String> getFlyingDays() {
         return flyingDays;
     }
 
-    public TravelClass getSelectedTravelClass(SearchCriteria searchCriteria){
-        return getTravelClass().stream()
-                .filter(travelClass -> travelClass.getTravelClass().
+    public TravelClassSeats getSelectedTravelClassSeats(SearchCriteria searchCriteria){
+        return getTravelClassSeats().stream()
+                .filter(travelClassSeats -> travelClassSeats.getTravelClass().
+                        equals(searchCriteria.getFlightClass())).findAny().orElse(null);
+    }
+
+    public TravelClassFares getSelectedTravelClassFares(SearchCriteria searchCriteria){
+        return getTravelClassFares().stream()
+                .filter(travelClassFares -> travelClassFares.getTravelClass().
                         equals(searchCriteria.getFlightClass())).findAny().orElse(null);
     }
 }

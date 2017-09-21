@@ -2,7 +2,8 @@ package airline.Repository;
 
 import airline.model.City;
 import airline.model.Flight;
-import airline.model.TravelClass;
+import airline.model.TravelClassFares;
+import airline.model.TravelClassSeats;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -39,20 +40,23 @@ public class Repository {
                 for(Object day : daysArray){
                     flyingDays.add(day.toString().toUpperCase());
                 }
-                List<TravelClass> travelClasses=new ArrayList<TravelClass>();
+                List<TravelClassSeats> travelClassesSeatsList=new ArrayList<TravelClassSeats>();
+                List<TravelClassFares> travelClassesFareList=new ArrayList<TravelClassFares>();
                 JSONArray travelClassArray=(JSONArray)flight.get("travel_class");
                 for(Object travelClassObj : travelClassArray){
                     JSONObject travelClass = (JSONObject) travelClassObj;
-                    TravelClass t=new TravelClass((String)travelClass.get("class"),
+                    TravelClassSeats seats=new TravelClassSeats((String)travelClass.get("class"),
                                     Integer.parseInt((String)travelClass.get("total_seats")),
-                                    Integer.parseInt((String)travelClass.get("available_seats")),
+                                    Integer.parseInt((String)travelClass.get("available_seats")));
+                    TravelClassFares fares=new TravelClassFares((String)travelClass.get("class"),
                                     Double.parseDouble((String)travelClass.get("base_price")));
-                    travelClasses.add(t);
+                    travelClassesSeatsList.add(seats);
+                    travelClassesFareList.add(fares);
                 }
                 City to =new City((String) flight.get("to"), getLocations().get((String)flight.get("to")));
                 City from =new City((String) flight.get("from"),getLocations().get((String)flight.get("from")));
                 Flight flightObj = new Flight((String) flight.get("flight_name"),from,to,
-                                                flyingDays,travelClasses);
+                                                flyingDays,travelClassesSeatsList,travelClassesFareList);
                 flightList.add(flightObj);
             }
         } catch (Exception e) {

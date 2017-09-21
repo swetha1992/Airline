@@ -1,28 +1,12 @@
 package airline.service;
 
 import airline.Repository.Repository;
-import airline.model.City;
-import airline.model.Flight;
 import airline.model.SearchCriteria;
-import airline.model.TravelClass;
 import airline.repository.MockRepository;
-import airline.utility.DateUtility;
-import com.sun.org.apache.regexp.internal.RE;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-
 import org.mockito.Mockito;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;

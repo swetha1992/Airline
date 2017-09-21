@@ -1,5 +1,4 @@
 package airline.model;
-
 /**
  * According to our stories, each travel class (E,F,B) has totalseats, available seats and base price.
  * Instead of having seperate maps that for each attribute ( E-6000.0, F-7000.0, B-8000.0 / E-100, F-50, B-10),
@@ -10,17 +9,15 @@ package airline.model;
  * Also, when ever a new attribute associated with class is introduced , say beverages we can add up here.
  *
  */
-public class TravelClass {
+public class TravelClassSeats {
     String travelClass;
     int totalSeats;
     int availableSeats;
-    double basePrice;
 
-    public TravelClass(String travelClass, int totalSeats, int availableSeats, double basePrice) {
+    public TravelClassSeats(String travelClass, int totalSeats, int availableSeats) {
         this.travelClass = travelClass;
         this.totalSeats = totalSeats;
         this.availableSeats = availableSeats;
-        this.basePrice = basePrice;
     }
     public String getTravelClass() { return travelClass; }
     public int getTotalSeats() {
@@ -28,9 +25,6 @@ public class TravelClass {
     }
     public int getAvailableSeats() {
         return availableSeats;
-    }
-    public double getBasePrice() {
-        return basePrice;
     }
 
     public double getPercentageOfSeatsFilled(){
